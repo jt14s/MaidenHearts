@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/world.gd" type="Script" id=1]
 [ext_resource path="res://assets/area_05_1400x1000.jpg" type="Texture" id=2]
-[ext_resource path="res://assets/tiles/walltiles.tres" type="TileSet" id=3]
+[ext_resource path="res://assets/tileMaps/walltiles.tres" type="TileSet" id=3]
 [ext_resource path="res://assets/tiles/floortiles.tres" type="TileSet" id=4]
 
 [node name="World" type="Node" index="0"]
