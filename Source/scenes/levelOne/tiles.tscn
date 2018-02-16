@@ -1,17 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/levelOne/tiles/floortile1.png" type="Texture" id=1]
 [ext_resource path="res://assets/levelOne/tiles/floortile2.png" type="Texture" id=2]
 [ext_resource path="res://assets/levelOne/tiles/floortile3.png" type="Texture" id=3]
 [ext_resource path="res://assets/levelOne/tiles/floortile4.png" type="Texture" id=4]
-[ext_resource path="res://assets/levelOne/tiles/rooftile1.png" type="Texture" id=5]
-[ext_resource path="res://assets/levelOne/tiles/walltile1.png" type="Texture" id=6]
-[ext_resource path="res://assets/levelOne/tiles/walltile2.png" type="Texture" id=7]
-[ext_resource path="res://assets/levelOne/tiles/walltile3.png" type="Texture" id=8]
-[ext_resource path="res://assets/levelOne/tiles/walltile4.png" type="Texture" id=9]
-[ext_resource path="res://assets/levelOne/tiles/walltile5.png" type="Texture" id=10]
+[ext_resource path="res://assets/levelOne/tiles/walltile1.png" type="Texture" id=5]
+[ext_resource path="res://assets/levelOne/tiles/walltile2.png" type="Texture" id=6]
+[ext_resource path="res://assets/levelOne/tiles/walltile3.png" type="Texture" id=7]
+[ext_resource path="res://assets/levelOne/tiles/walltile4.png" type="Texture" id=8]
+[ext_resource path="res://assets/levelOne/tiles/walltile5.png" type="Texture" id=9]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="floortile1" type="Sprite" parent="." index="0"]
 
@@ -33,34 +32,29 @@ texture = ExtResource( 3 )
 position = Vector2( 224, 32 )
 texture = ExtResource( 4 )
 
-[node name="rooftile1" type="Sprite" parent="." index="4"]
-
-position = Vector2( 288, 32 )
-texture = ExtResource( 5 )
-
-[node name="walltile1" type="Sprite" parent="." index="5"]
+[node name="walltile1" type="Sprite" parent="." index="4"]
 
 position = Vector2( 32, 96 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 
-[node name="walltile2" type="Sprite" parent="." index="6"]
+[node name="walltile2" type="Sprite" parent="." index="5"]
 
 position = Vector2( 96, 96 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
-[node name="walltile3" type="Sprite" parent="." index="7"]
+[node name="walltile3" type="Sprite" parent="." index="6"]
 
 position = Vector2( 160, 96 )
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 
-[node name="walltile4" type="Sprite" parent="." index="8"]
+[node name="walltile4" type="Sprite" parent="." index="7"]
 
 position = Vector2( 224, 96 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 
-[node name="walltile5" type="Sprite" parent="." index="9"]
+[node name="walltile5" type="Sprite" parent="." index="8"]
 
 position = Vector2( 288, 96 )
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 
 
