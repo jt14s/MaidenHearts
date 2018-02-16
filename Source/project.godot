@@ -11,8 +11,13 @@ config_version=3
 [application]
 
 config/name="Source"
-run/main_scene="res://scenes/levelOne/world.tscn"
+run/main_scene="res://scenes/mainMenu/mainMenu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1440
+window/size/height=900
 
 [rendering]
 
