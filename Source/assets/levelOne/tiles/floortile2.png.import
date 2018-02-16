@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/floortile4.png-0b2a74642149dec84144560d94b191a9.stex"
+path="res://.import/floortile2.png-ea35c58a704d2f87a85c3f4d1da3d9a5.stex"
 
 [deps]
 
-source_file="res://assets/tiles/floortile4.png"
-source_md5="accd17ecccceb7139f9794c66e9f905a"
+source_file="res://assets/levelOne/tiles/floortile2.png"
+source_md5="a4ad2417072f7df70ecfd9d8a476c61b"
 
-dest_files=[ "res://.import/floortile4.png-0b2a74642149dec84144560d94b191a9.stex" ]
-dest_md5="4ebfadbdff835ab70ef8062645de73c7"
+dest_files=[ "res://.import/floortile2.png-ea35c58a704d2f87a85c3f4d1da3d9a5.stex" ]
+dest_md5="4378dfe21954791a723846468cf54ddc"
 
 [params]
 

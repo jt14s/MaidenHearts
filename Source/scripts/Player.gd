@@ -5,9 +5,9 @@ var MAX_SPEED = 600
 var velocity = Vector2()
 
 onready var sprite = get_node("Sprite")
-onready var spriteUp = preload("res://assets/tiles/standinup.png")
-onready var spriteDownAndRight = preload("res://assets/tiles/standin.png")
-onready var spriteLeft = preload("res://assets/tiles/standinleft.png")
+onready var spriteUp = preload("res://assets/levelOne/player/standinup.png")
+onready var spriteDownAndRight = preload("res://assets/levelOne/player/standin.png")
+onready var spriteLeft = preload("res://assets/levelOne/player/standinleft.png")
 
 func _ready():
 	set_physics_process(true)

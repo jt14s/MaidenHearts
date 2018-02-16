@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/standinleft.png-11fc39b8e186118c41fa9b825c062e60.stex"
+path="res://.import/walltile3.png-45f0ab66778efeac41fb7f16df690d43.stex"
 
 [deps]
 
-source_file="res://assets/tiles/standinleft.png"
-source_md5="e6670deec21df0b2d16b0579dc552493"
+source_file="res://assets/levelOne/tiles/walltile3.png"
+source_md5="ea064edc15d2d7df36ac699c3302cc8c"
 
-dest_files=[ "res://.import/standinleft.png-11fc39b8e186118c41fa9b825c062e60.stex" ]
-dest_md5="541680cc150188ba477dddc46db05bcb"
+dest_files=[ "res://.import/walltile3.png-45f0ab66778efeac41fb7f16df690d43.stex" ]
+dest_md5="dacab1100ae7c4ce7fe5cd5f5d0186a5"
 
 [params]
 
