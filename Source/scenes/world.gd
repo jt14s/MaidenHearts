@@ -3,7 +3,7 @@ extends Node
 onready var player = get_node("Player")
 
 func _ready():
-	player.position = Vector2(130,130)
+	player.position = Vector2(0,0)
 	pass
 
 #func _process(delta):
