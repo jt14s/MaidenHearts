@@ -2,8 +2,9 @@ extends KinematicBody2D
 
 var speed = 0
 var MAX_SPEED = 600
-
 var velocity = Vector2()
+
+onready var sprite = get_node("Sprite")
 
 func _ready():
 	set_physics_process(true)
@@ -17,7 +18,12 @@ func _physics_process(delta):
 		speed = MAX_SPEED
 	else:
 		speed = 0
-		
+	
+	if direction.x < 0:
+		sprite.set_flip_h(true)
+	elif direction.x > 0:
+		sprite.set_flip_h(false)
+	
 	velocity = speed * direction.normalized() * delta
 	move_and_collide(velocity)
 	
