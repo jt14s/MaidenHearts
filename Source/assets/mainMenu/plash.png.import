@@ -7,10 +7,10 @@ path="res://.import/plash.png-96a7d6de20ba6a1f69c1e2e3ba8a112e.stex"
 [deps]
 
 source_file="res://assets/mainMenu/plash.png"
-source_md5="926d9ed2fb4c83e25b9150959e915677"
+source_md5="066f1945805d13f464ef34d500d571c3"
 
 dest_files=[ "res://.import/plash.png-96a7d6de20ba6a1f69c1e2e3ba8a112e.stex" ]
-dest_md5="1c3a467b7cb585e8c775ad5f6812a33f"
+dest_md5="70b0b3f51a554db5a8dcc3415dab32e7"
 
 [params]
 

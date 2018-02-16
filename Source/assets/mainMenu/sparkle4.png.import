@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/logo.png-b5d4e312a9668a40b762c9547ed73c4d.stex"
+path="res://.import/sparkle4.png-c4fd61b4dcc57813b25e182c7a42d9e6.stex"
 
 [deps]
 
-source_file="res://assets/mainMenu/logo.png"
-source_md5="3bb25bc5c97cfa5c11bf25649f643687"
+source_file="res://assets/mainMenu/sparkle4.png"
+source_md5="61eb02ca940f73f8fc90f5a19f6ebe2e"
 
-dest_files=[ "res://.import/logo.png-b5d4e312a9668a40b762c9547ed73c4d.stex" ]
-dest_md5="2c5650c4b45741894d30e935f59f3bfb"
+dest_files=[ "res://.import/sparkle4.png-c4fd61b4dcc57813b25e182c7a42d9e6.stex" ]
+dest_md5="d57ff3a0b653393f75be37b07770d263"
 
 [params]
 
