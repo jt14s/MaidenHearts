@@ -1,10 +1,158 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scripts/mainMenu.gd" type="Script" id=1]
 [ext_resource path="res://assets/mainMenu/plash.png" type="Texture" id=2]
 [ext_resource path="res://assets/mainMenu/logo.png" type="Texture" id=3]
-[ext_resource path="res://assets/mainMenu/play.png" type="Texture" id=4]
-[ext_resource path="res://assets/mainMenu/quitgame.png" type="Texture" id=5]
+[ext_resource path="res://assets/mainMenu/buttons/play.png" type="Texture" id=4]
+[ext_resource path="res://assets/mainMenu/buttons/quitgame.png" type="Texture" id=5]
+[ext_resource path="res://assets/mainMenu/clouds/cloud1.png" type="Texture" id=6]
+[ext_resource path="res://assets/mainMenu/clouds/cloud2.png" type="Texture" id=7]
+[ext_resource path="res://assets/mainMenu/clouds/cloud3.png" type="Texture" id=8]
+[ext_resource path="res://assets/mainMenu/clouds/cloud4.png" type="Texture" id=9]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle6.png" type="Texture" id=10]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle1.png" type="Texture" id=11]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle2.png" type="Texture" id=12]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle3.png" type="Texture" id=13]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle4.png" type="Texture" id=14]
+[ext_resource path="res://assets/mainMenu/sparkles/sparkle5.png" type="Texture" id=15]
+
+[sub_resource type="Animation" id=1]
+
+length = 10.3
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cloud1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 10, 10.1, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -69.3274, 160.429 ), Vector2( 2038.46, 83.3799 ), Vector2( 1506.32, -211.826 ), Vector2( -154.699, -208.402 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cloud2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 10, 10.1, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -741.121, 426.411 ), Vector2( 1507.61, 357.171 ), Vector2( 1496.43, -175.27 ), Vector2( -120.066, -151.297 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+length = 15.3
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cloud3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -722.143, 139.77 ), Vector2( 1474.34, 94.0096 ), Vector2( 1464.07, -162.849 ), Vector2( -128.456, -142.301 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cloud4:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -308.316, 276.538 ), Vector2( 1871.01, 230.778 ), Vector2( 1819.64, -139.099 ), Vector2( -125.64, -128.824 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
+length = 15.3
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cloud3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -722.143, 139.77 ), Vector2( 1474.34, 94.0096 ), Vector2( 1464.07, -162.849 ), Vector2( -128.456, -142.301 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cloud4:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -308.316, 276.538 ), Vector2( 1871.01, 230.778 ), Vector2( 1819.64, -139.099 ), Vector2( -125.64, -128.824 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+
+length = 15.3
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Cloud3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -722.143, 139.77 ), Vector2( -722.143, 139.77 ), Vector2( 1474.34, 94.0096 ), Vector2( 1464.07, -162.849 ), Vector2( -128.456, -142.301 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Cloud4:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.5, 15, 15.1, 15.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -308.316, 276.538 ), Vector2( -308.316, 276.538 ), Vector2( 1871.01, 230.778 ), Vector2( 1819.64, -139.099 ), Vector2( -125.64, -128.824 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+
+length = 6.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sparkle1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 10 ) ]
+}
 
 [node name="MainMenu" type="Node" index="0"]
 
@@ -14,6 +162,7 @@ script = ExtResource( 1 )
 
 position = Vector2( 710.166, 430.372 )
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Z Index" ]
 __meta__ = {
 "_edit_lock_": true
 }
@@ -21,10 +170,13 @@ __meta__ = {
 [node name="Title" type="Sprite" parent="." index="1"]
 
 position = Vector2( 700, 150 )
+z_index = 4
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="UI" type="Control" parent="." index="2"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -36,18 +188,104 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin" ]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="PlayButton" type="Sprite" parent="UI" index="0"]
 
 position = Vector2( 729, 489 )
+z_index = 4
 texture = ExtResource( 4 )
-_sections_unfolded = [ "Textures" ]
+_sections_unfolded = [ "Textures", "Transform", "Z Index" ]
 
 [node name="QuitButton" type="Sprite" parent="UI" index="1"]
 
 position = Vector2( 729, 569 )
+z_index = 4
 texture = ExtResource( 5 )
-_sections_unfolded = [ "Textures", "Transform" ]
+_sections_unfolded = [ "Textures", "Transform", "Z Index" ]
+
+[node name="Clouds" type="Node" parent="." index="3" groups=[
+"Clouds",
+]]
+
+editor/display_folded = true
+
+[node name="Cloud1" type="Sprite" parent="Clouds" index="0"]
+
+position = Vector2( -69.3274, 160.429 )
+z_index = 3
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Animation", "Region", "Transform", "Z Index" ]
+
+[node name="Cloud2" type="Sprite" parent="Clouds" index="1"]
+
+position = Vector2( -741.121, 426.411 )
+z_index = 3
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="FrontClouds" type="AnimationPlayer" parent="Clouds" index="2"]
+
+root_node = NodePath("..")
+autoplay = "Float"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 0.2
+anims/Float = SubResource( 1 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="Cloud3" type="Sprite" parent="Clouds" index="3"]
+
+modulate = Color( 0.746094, 0.440079, 0.440079, 1 )
+position = Vector2( -722.143, 139.77 )
+z_index = 2
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="Cloud4" type="Sprite" parent="Clouds" index="4"]
+
+modulate = Color( 0.679688, 0.382324, 0.382324, 1 )
+position = Vector2( -308.316, 276.538 )
+z_index = 2
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+[node name="BackClouds" type="AnimationPlayer" parent="Clouds" index="5"]
+
+root_node = NodePath("..")
+autoplay = "Float"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 0.17
+anims/Float = SubResource( 2 )
+"anims/Float (copy)" = SubResource( 3 )
+"anims/Float (copy) (copy)" = SubResource( 4 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="Twinkles" type="Node" parent="." index="4"]
+
+editor/display_folded = true
+
+[node name="Sparkle1" type="Sprite" parent="Twinkles" index="0"]
+
+position = Vector2( 712.141, 430.087 )
+z_index = 1
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Twinkles" index="1"]
+
+root_node = NodePath("..")
+autoplay = "Sparkle"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/Sparkle = SubResource( 5 )
+blend_times = [  ]
 
 

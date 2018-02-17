@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/characterSelect.gd" type="Script" id=1]
+[ext_resource path="res://assets/mainMenu/plash.png" type="Texture" id=2]
+[ext_resource path="res://assets/mainMenu/portraits/paladin.png" type="Texture" id=3]
+[ext_resource path="res://assets/mainMenu/portraits/mage.png" type="Texture" id=4]
+[ext_resource path="res://assets/mainMenu/portraits/assassin.png" type="Texture" id=5]
+[ext_resource path="res://assets/mainMenu/portraits/alien.png" type="Texture" id=6]
+[ext_resource path="res://assets/mainMenu/portraits/selector.png" type="Texture" id=7]
+
+[node name="CharacterSelect" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 750.662, 418.269 )
+texture = ExtResource( 2 )
+
+[node name="Portraits" type="Node" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="paladin" type="Sprite" parent="Portraits" index="0"]
+
+position = Vector2( 322, 446 )
+texture = ExtResource( 3 )
+
+[node name="mage" type="Sprite" parent="Portraits" index="1"]
+
+position = Vector2( 610, 446 )
+texture = ExtResource( 4 )
+
+[node name="assassin" type="Sprite" parent="Portraits" index="2"]
+
+position = Vector2( 898, 446 )
+texture = ExtResource( 5 )
+
+[node name="alien" type="Sprite" parent="Portraits" index="3"]
+
+position = Vector2( 1186, 446 )
+texture = ExtResource( 6 )
+
+[node name="Selector" type="Sprite" parent="." index="2"]
+
+position = Vector2( 332.05, 281.101 )
+texture = ExtResource( 7 )
+
+
