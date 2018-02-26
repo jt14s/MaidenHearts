@@ -1,12 +1,8 @@
 extends KinematicBody2D
 
-signal pausedGame
-
 var speed = 0
-var MAX_SPEED = 600
+var MAX_SPEED = 400
 var velocity = Vector2()
-
-var pauseState = false
 
 onready var sprite = get_node("Sprite")
 onready var spriteUp = preload("res://assets/characterSprites/player/paladin/up/up1.png")
@@ -16,14 +12,8 @@ onready var spriteRight = preload("res://assets/characterSprites/player/paladin/
 
 func _ready():
 	sprite.texture = global.playerSprite
-	set_physics_process(true)
-	set_process_input(true)
-
-func _input(event):
-	if event.is_action_pressed("pause"):
-		emit_signal("pausedGame")
 	
-func _physics_process(delta):
+func _process(delta):
 	### direction calculation ###
 	#
 	var direction = Vector2()
@@ -44,12 +34,6 @@ func _physics_process(delta):
 		sprite.texture = spriteRight
 	
 	### movement ###
-	#
-	if direction:
-		speed = MAX_SPEED
-	else:
-		speed = 0
-		
-	velocity = speed * direction.normalized() * delta
-	move_and_collide(velocity)
-	
+	#	
+	velocity = MAX_SPEED * direction.normalized()
+	move_and_slide(velocity)

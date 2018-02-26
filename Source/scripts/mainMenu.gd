@@ -3,9 +3,10 @@ extends Node
 onready var playButton = get_node("UI/PlayButton")
 onready var quitButton = get_node("UI/QuitButton")
 
-var index = 0
+var index
 
 func _ready():
+	index = 0
 	playButton.scale = Vector2(1.2,1.2)
 	set_process_input(true)
 	
@@ -20,6 +21,6 @@ func _input(event):
 		index += 1
 	if event.is_action_pressed("ui_accept"):
 		if index == 0:
-			get_tree().change_scene("res://scenes/mainMenu/characterSelect.tscn")
+			get_tree().change_scene("res://scenes/characterSelect/characterSelect.tscn")
 		elif index == 1:
 			get_tree().quit()

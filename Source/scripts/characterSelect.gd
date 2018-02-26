@@ -16,4 +16,4 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		if index == 0:
 			global.playerSprite = preload("res://assets/characterSprites/player/paladin/right/right1.png")
-			get_tree().change_scene("res://scenes/levelOne/world.tscn")
+			get_tree().change_scene("res://scenes/levelOne/levelOne.tscn")
