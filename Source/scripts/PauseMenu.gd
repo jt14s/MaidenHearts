@@ -31,8 +31,8 @@ func _input(event):
 				mainMenuButton.scale = Vector2(0.5,0.5)
 		if event.is_action_pressed("ui_accept"):
 			if index == 0:
+				self.hide()
 				get_tree().set_pause(false)
-				queue_free()
 			elif index == 1:
 				get_tree().change_scene("res://scenes/mainMenu/mainMenu.tscn")
 				queue_free()

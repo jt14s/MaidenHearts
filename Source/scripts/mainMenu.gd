@@ -6,6 +6,7 @@ onready var quitButton = get_node("UI/QuitButton")
 var index
 
 func _ready():
+	get_tree().set_pause(false)
 	index = 0
 	playButton.scale = Vector2(1.2,1.2)
 	set_process_input(true)
