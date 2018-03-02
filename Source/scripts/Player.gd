@@ -11,7 +11,7 @@ onready var spriteLeft = preload("res://assets/characterSprites/player/paladin/l
 onready var spriteRight = preload("res://assets/characterSprites/player/paladin/right/right1.png")
 
 func _ready():
-	sprite.texture = global.playerSprite
+	sprite.texture = global.player_sprite
 	
 func _process(delta):
 	### direction calculation ###

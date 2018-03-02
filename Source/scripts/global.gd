@@ -1,3 +1,9 @@
 extends Node
 
-onready var playerSprite = preload("res://assets/characterSprites/player/paladin/right/right1.png")
+onready var player_sprite = preload("res://assets/characterSprites/player/paladin/right/right1.png")
+
+func change_pause_state(state):
+	if state == true:
+		get_tree().set_pause(true)
+	else:
+		get_tree().set_pause(false)

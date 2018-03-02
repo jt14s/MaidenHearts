@@ -1,14 +1,14 @@
 extends Node
 
 onready var player = preload("res://scenes/Player.tscn")
-var playerInstance
+var player_instance
 
 func _ready():
 	set_process_input(true)
 	
-	playerInstance = player.instance()
-	playerInstance.position = Vector2(0,0)
-	add_child(playerInstance)
+	player_instance = player.instance()
+	player_instance.position = Vector2(0,0)
+	add_child(player_instance)
 
 func _input(event):
 	if event.is_action_pressed("pause"):
