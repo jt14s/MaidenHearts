@@ -15,5 +15,11 @@ func _input(event):
 		selector.position.x += 288
 	if event.is_action_pressed("ui_accept"):
 		if index == 0:
-			global.player_sprite = preload("res://assets/characterSprites/player/paladin/right/right1.png")
-			get_tree().change_scene("res://scenes/levelOne/levelOne.tscn")
+			global.player_class_type = "P"
+		elif index == 1:
+			global.player_class_type = "M"
+		elif index == 2:
+			global.player_class_type = "A"
+		#elif index == 3:
+		#	global.class_type = "a"
+		get_tree().change_scene("res://scenes/levelOne/levelOne.tscn")

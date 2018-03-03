@@ -1,6 +1,6 @@
 extends Node
 
-onready var player_sprite = preload("res://assets/characterSprites/player/paladin/right/right1.png")
+var player_class_type
 
 func change_pause_state(state):
 	if state == true:
